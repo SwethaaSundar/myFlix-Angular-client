@@ -1,0 +1,50 @@
+<!-- <p>welcome-page works!</p> -->
+<div class="main-page">
+  <div
+    style="
+      background-image: url(https://scontent-fra3-1.xx.fbcdn.net/v/t39.30808-6/300091789_969196127260632_1161975641465868158_n.png?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=hcv21OP4X_cAX8jRnAH&_nc_ht=scontent-fra3-1.xx&oh=00_AfD69pzdosCN7htndaQZBkvbhk0bbwMV71LknkkG4mxeAQ&oe=6485F81B);
+      background-repeat: no-repeat;
+      height: 500px;
+      margin: auto;
+      width: 45%;
+      padding: 10px;
+    "
+  >
+    <h1
+      style="color: #1f115a; text-align: center; position: relative; top: 70%"
+    >
+      Welcome to Disney Princess movies
+    </h1>
+    <button
+      mat-raised-button
+      (click)="openUserRegistrationDialog()"
+      style="
+        margin-right: 10px;
+        position: relative;
+        top: 70%;
+        left: 40%;
+        border-radius: 25%;
+      "
+      color="primary"
+    >
+      Sign Up
+    </button>
+    <button
+      mat-raised-button
+      (click)="openUserLoginDialog()"
+      style="
+        margin-right: 10px;
+        position: relative;
+        top: 70%;
+        left: 45%;
+        border-radius: 25%;
+      "
+      color="primary"
+    >
+      Login
+    </button>
+    <!-- <button mat-raised-button (click)="openMoviesDialog()" color="primary">
+    All Movies
+  </button> -->
+  </div>
+</div>
