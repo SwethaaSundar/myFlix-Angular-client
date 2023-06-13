@@ -7,9 +7,6 @@ Responsive and client-side of a single-page movie application called myFlix base
 ## Deployed App URL
 
 [https://swethaasundar.github.io/myFlix-Angular-client/](https://swethaasundar.github.io/myFlix-Angular-client/)
-![myFlix app](https://github.com/SwethaaSundar/myFlix-Angular-client/myFlix.png)
-
-<!-- <img src="" alt="Alt text" title="Optional title"> -->
 
 ## Technology stack:
 
