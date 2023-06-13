@@ -21,6 +21,11 @@ export class MovieCardComponent {
     this.getMovies();
   }
 
+  /**
+   * fetch movies from FetchApiDataService service getAllMovies()
+   * @returns an array of all movies
+   * @function getMovies
+   */
   getMovies(): void {
     this.fetchApiData.getAllMovies().subscribe((resp: any) => {
       this.movies = resp;
@@ -29,6 +34,12 @@ export class MovieCardComponent {
     });
   }
 
+  /**
+   * opens the MovieGenreComponent dialog
+   * @param name
+   * @param description
+   * @function openGenre
+   */
   openGenre(name: string, description: string): void {
     this.dialog.open(MovieInfoComponent, {
       data: {
@@ -39,6 +50,12 @@ export class MovieCardComponent {
     });
   }
 
+  /**
+   * opens the MovieDirectorComponent dialog
+   * @param name
+   * @param bio
+   * @function openDirector
+   */
   openDirector(name: string, bio: string): void {
     this.dialog.open(MovieInfoComponent, {
       data: {
@@ -49,6 +66,11 @@ export class MovieCardComponent {
     });
   }
 
+  /**
+   * opens the MovieSummaryComponent dialog
+   * @param description
+   * @function openSynopsis
+   */
   openSynopsis(description: string): void {
     this.dialog.open(MovieInfoComponent, {
       data: {
@@ -59,6 +81,12 @@ export class MovieCardComponent {
     });
   }
 
+  /**
+   * add favorite movies from FetchApiDataService service addFavorite()
+   * @returns the added movie from the favorite movies array
+   * @function addFavorite
+   * @param id
+   */
   addFavorite(id: string): void {
     this.fetchApiData.addFavoriteMovies(id).subscribe((result) => {
       this.snackBar.open('Movie added to favorites.', 'OK', {
@@ -67,10 +95,21 @@ export class MovieCardComponent {
     });
   }
 
+  /**
+   * runs a boolean if selected movie is the favorite movie
+   * @returns true or false
+   * @function isMovieFavorite
+   * @param id
+   */
   isFavorite(id: string): boolean {
     return this.fetchApiData.isFavoriteMovie(id);
   }
-
+  /**
+   * remove favorite movies from FetchApiDataService service removeFavorite()
+   * @returns an updated favoriteMovies array
+   * @function removeFavorite
+   * @param id
+   */
   removeFavorite(id: string): void {
     this.fetchApiData.deleteFavoriteMovies(id).subscribe((result) => {
       this.snackBar.open('Movie removed from favorites.', 'OK', {

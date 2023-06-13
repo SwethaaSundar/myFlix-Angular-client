@@ -29,7 +29,12 @@ export class UserProfileComponent implements OnInit {
   ngOnInit(): void {
     this.getUserInfo();
   }
-  // Fetch user data via API
+  /**
+   * Get the profile information of the user by getUserInfo()
+   * It will fill out all form fields with the data of the current user like
+   * Username, Email and FavoriteMovies info
+   * @function getUserUnfo
+   */
   getUserInfo(): void {
     this.user = this.fetchApiData.getOneUser();
     this.userData.Username = this.user.Username;
@@ -43,7 +48,12 @@ export class UserProfileComponent implements OnInit {
     });
   }
 
-  // Update user data, such as username, password, email, or birthday
+  /**
+   * Update the user info
+   * If input is empty, assign current user value (user), otherwise, assign updated input value (editUser)
+   * set localStorage username to updated username, inform user, then reload
+   * @function editUser
+   */
   editUser(): void {
     this.fetchApiData.editUser(this.userData).subscribe(
       (result) => {
@@ -61,7 +71,11 @@ export class UserProfileComponent implements OnInit {
     );
   }
 
-  // Delete user data for the user that is logged in
+  /**
+   * Get a confirmation from the user, if given, navigate to the welcome page
+   * Inform the user of the changes and delete user data (deleteUser)
+   * @function deleteUser
+   */
   deleteUser(): void {
     this.fetchApiData.deleteUser().subscribe(
       (result) => {
