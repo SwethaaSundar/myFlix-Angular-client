@@ -1,27 +1,49 @@
-# MyFlixAngularClient
+# myFlix-Angular-client
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+## Description
 
-## Development server
+Responsive and client-side of a single-page movie application called myFlix based on its existing server-side code (REST API and database). This site was built using GitHub Pages.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Deployed App URL
 
-## Code scaffolding
+[https://swethaasundar.github.io/myFlix-Angular-client/](https://swethaasundar.github.io/myFlix-Angular-client/)
+![myFlix app](https://github.com/SwethaaSundar/myFlix-Angular-client/myFlix.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<!-- <img src="" alt="Alt text" title="Optional title"> -->
 
-## Build
+## Technology stack:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular
+- Angular Material UI
+- TypeScript
+- HTML/CSS
+- TypeDoc
 
-## Running unit tests
+## Dependencies:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+"@angular/animations": "^16.0.0",
+"@angular/cdk": "^16.0.2",
+"@angular/common": "^16.0.0",
+"@angular/compiler": "^16.0.0",
+"@angular/core": "^16.0.0",
+"@angular/forms": "^16.0.0",
+"@angular/material": "^16.0.2",
+"@angular/platform-browser": "^16.0.0",
+"@angular/platform-browser-dynamic": "^16.0.0",
+"@angular/router": "^16.0.0",
+"rxjs": "~7.8.0",
+"tslib": "^2.3.0",
+"zone.js": "~0.13.0"
+```
 
-## Running end-to-end tests
+## 🛠 Installation:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### Getting started
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+git clone https://github.com/SwethaaSundar/myFlix-Angular-client.git
+cd myFlix-Angular-client
+npm install
+ng serve
+```
